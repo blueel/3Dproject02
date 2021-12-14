@@ -1,22 +1,42 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+// import Home from '../views/Home.vue'
+import zonglan from '../components/zonglan.vue'
+import shebei from '../components/shebei.vue'
+import quyu from '../components/quyu.vue'
+import jiexiantu from '../components/jiexiantu.vue'
+import xitong from '../components/xitong.vue'
+import jinggaofenxi from '../components/jinggaofenxi.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: '/zonglan',
+    name: 'zonglan',
+    component: zonglan
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/xitong',
+    name: 'xitong',
+    component: xitong
+  }, {
+    path: '/shebei',
+    name: 'shebei',
+    component: shebei
+  }, {
+    path: '/quyu',
+    name: 'quyu',
+    component: quyu
+  }, {
+    path: '/jiexiantu',
+    name: 'jiexiantu',
+    component: jiexiantu
+  },
+  {
+    path: '/jinggaofenxi',
+    name: 'jinggaofenxi',
+    component: jinggaofenxi
   }
 ]
 
